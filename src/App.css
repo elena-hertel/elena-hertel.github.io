@@ -14,12 +14,11 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 70vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +34,109 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.resizable-image {
+  height: 100%; /* Limits the image width to its parent container */
+  width: auto; /* Maintains the aspect ratio */
+  border-radius: 7%;
+}
+
+.title-container {
+  position: relative;
+  max-height: 100%;
+  width: 50%;
+  margin: 30px;
+  text-align: left;
+}
+
+.headshot-container {
+  flex: 1;
+  text-align: right;
+  height: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  position: absolute;
+  top: -40vh;
+  left: -15vh;
+  height: 60vw;
+  width: 60vw;
+  min-height: 800px;
+  min-width: 800px;
+  background-color: #F8D49B;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: -1;
+}
+
+.rounded-background {
+  position: absolute;
+  top: 8vh;
+  right: 6vh;
+  background-color: #F8BC9B;
+  height: 64vh;
+  width: 42vh;
+  border-radius: 7%;
+  z-index: -1;
+}
+
+.underlineHover {
+  position: relative;
+}
+
+.underlineHover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.175rem;
+  background: #F89B9B;
+  left: 0;
+  bottom: -0.25rem;
+  transform: scale(0, 1);
+}
+
+.underlineHover:hover::after {
+  transform: scale(1, 1);
+  transition: transform 0.3s ease;
+}
+
+.square {
+  position: absolute; /* Position squares relative to the vertical line */
+  top: 0; /* Position squares at the top of the line */
+  width: 10px; /* Adjust square width */
+  height: 10px; /* Adjust square height */
+  background-color: orange; /* Set square color */
+  border-radius: 2px; /* Add border-radius for rounded corners */
+  transform: translateX(-50%); /* Center the squares horizontally */
+}
+
+.Menu {
+  display: flex;
+}
+
+.card {
+  display: flex; /* Adjust size based on content */
+  flex-direction: row !important;
+  align-items: center !important;
+  padding: 10px 20px; /* Optional: add some padding for better spacing */
+  border: none !important;
+  background: none !important;
+}
+
+.card * {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center !important;
+}
+
+.menu-items h5 {
+  margin-right: 3rem;
 }

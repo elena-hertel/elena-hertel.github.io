@@ -32,28 +32,26 @@ function Header() {
                         <h5 style={{ fontFamily: 'Courier', marginLeft: '3rem'}}>
                             <span class="underlineHover">
                                 <button style={{all: 'unset'}} onClick={() => navigate('/')}>Home</button>
-                                {/* <a href="/" style={{textDecoration: 'none', color:'black'}}> Home </a> */}
                             </span>
                         </h5>
                         <h5 style={{ fontFamily: 'Courier'}}>
                             <span class="underlineHover">
                                 <button style={{all: 'unset'}} onClick={() => navigate('/work-experience')}>Work Experience</button>
-                                {/* <a href="/work-experience" style={{textDecoration: 'none', color:'black'}}> Work Experience </a> */}
                             </span>
                         </h5>
                         <h5 style={{ fontFamily: 'Courier'}}>
                             <span class="underlineHover">
-                                <a href="/projects" style={{textDecoration: 'none', color:'black'}}> Projects </a>
+                                <button style={{all: 'unset'}} onClick={() => navigate('/projects')}>Projects</button>
                             </span>
                         </h5>
                         <h5 style={{ fontFamily: 'Courier'}}>
                             <span class="underlineHover">
-                                <a href="/interests" style={{textDecoration: 'none', color: 'black'}}> Interests</a>
+                                <button style={{all: 'unset'}} onClick={() => navigate('/interests')}>Interests</button>
                             </span>
                         </h5>
                         <h5 style={{ fontFamily: 'Courier'}}>
                             <span class="underlineHover">
-                                <a href="/resume" style={{textDecoration: 'none', color: 'black'}}> Resume</a>
+                                <button style={{all: 'unset'}} onClick={() => navigate('/resume')}>Resume</button>
                             </span>
                         </h5>
                     </motion.div>

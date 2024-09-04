@@ -4,9 +4,11 @@ import React from 'react'
 import {motion} from 'framer-motion';
 import {useState} from 'react';
 import './App.css'
+import { useNavigate } from "react-router-dom";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    let navigate =useNavigate();
 
     return (
         <div className='Menu'>
@@ -29,12 +31,14 @@ function Header() {
                     >
                         <h5 style={{ fontFamily: 'Courier', marginLeft: '3rem'}}>
                             <span class="underlineHover">
-                                <a href="/" style={{textDecoration: 'none', color:'black'}}> Home </a>
+                                <button style={{all: 'unset'}} onClick={() => navigate('/')}>Home</button>
+                                {/* <a href="/" style={{textDecoration: 'none', color:'black'}}> Home </a> */}
                             </span>
                         </h5>
                         <h5 style={{ fontFamily: 'Courier'}}>
                             <span class="underlineHover">
-                                <a href="/work-experience" style={{textDecoration: 'none', color:'black'}}> Work Experience </a>
+                                <button style={{all: 'unset'}} onClick={() => navigate('/work-experience')}>Work Experience</button>
+                                {/* <a href="/work-experience" style={{textDecoration: 'none', color:'black'}}> Work Experience </a> */}
                             </span>
                         </h5>
                         <h5 style={{ fontFamily: 'Courier'}}>

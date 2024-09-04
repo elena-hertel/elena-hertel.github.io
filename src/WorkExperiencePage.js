@@ -20,16 +20,16 @@ function WorkExperiencePage() {
       <div
         style={{
           display: 'flex',
-          justifyContent: 'center', // Center horizontally
-          alignItems: 'center', // Center vertically (if necessary)
+          justifyContent: 'center',
+          alignItems: 'center',
         }}
       >
         <Box
           sx={{
-            backgroundColor: '#F8D49B', // Adjust background color if needed
+            backgroundColor: '#F8D49B',
             padding: 2,
-            borderRadius: 2, // Rounded corners
-            textAlign: 'center', // Center text
+            borderRadius: 2,
+            textAlign: 'center',
             display: 'inline-flex',
             alignItems: 'center',
           }}
@@ -63,7 +63,7 @@ function WorkExperiencePage() {
               <Box
                 sx={{
                   padding: 2,
-                  borderRadius: 2, // Rounded corners
+                  borderRadius: 2,
                   border: '3px solid',
                   borderColor: '#F8BC9B',
                   alignItems: 'center',
@@ -96,7 +96,7 @@ function WorkExperiencePage() {
             <Box
               sx={{
                 padding: 2,
-                borderRadius: 2, // Rounded corners
+                borderRadius: 2,
                 border: '3px solid',
                 borderColor: '#F8BC9B',
                 alignItems: 'center',
@@ -129,7 +129,7 @@ function WorkExperiencePage() {
             <Box
               sx={{
                 padding: 2,
-                borderRadius: 2, // Rounded corners
+                borderRadius: 2,
                 border: '3px solid',
                 borderColor: '#F8BC9B',
                 alignItems: 'center',
@@ -162,7 +162,7 @@ function WorkExperiencePage() {
             <Box
               sx={{
                 padding: 2,
-                borderRadius: 2, // Rounded corners
+                borderRadius: 2,
                 border: '3px solid',
                 borderColor: '#F8BC9B',
                 alignItems: 'center',
@@ -195,7 +195,7 @@ function WorkExperiencePage() {
             <Box
               sx={{
                 padding: 2,
-                borderRadius: 2, // Rounded corners
+                borderRadius: 2,
                 border: '3px solid',
                 borderColor: '#F8BC9B',
                 alignItems: 'center',

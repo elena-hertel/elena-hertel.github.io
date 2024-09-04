@@ -103,17 +103,17 @@ function InterestsPage () {
             <div
                 style={{
                     display: 'flex',
-                    justifyContent: 'center', // Center horizontally
-                    alignItems: 'center', // Center vertically (if necessary),
+                    justifyContent: 'center',
+                    alignItems: 'center',
                     flexDirection: 'column'
                 }}
             >
                 <Box
                     sx={{
-                        backgroundColor: '#F8D49B', // Adjust background color if needed
+                        backgroundColor: '#F8D49B',
                         padding: 2,
-                        borderRadius: 2, // Rounded corners
-                        textAlign: 'center', // Center text
+                        borderRadius: 2,
+                        textAlign: 'center',
                         display: 'inline-flex',
                         alignItems: 'center',
                     }}
@@ -170,13 +170,13 @@ function InterestsPage () {
                         const img = e.currentTarget.querySelector('.circle-image');
                         const text = e.currentTarget.querySelector('.circle-text');
                         img.style.opacity = 1;
-                        text.style.color = '#fff'; // Change text color on hover
+                        text.style.color = '#fff';
                     }}
                     onMouseLeave={(e) => {
                         const img = e.currentTarget.querySelector('.circle-image');
                         const text = e.currentTarget.querySelector('.circle-text');
                         img.style.opacity = 0;
-                        text.style.color = '#000'; // Revert text color on mouse leave
+                        text.style.color = '#000';
                     }}
                 >
                     <div className="circle-image"

@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import './index.css';
 import { Link } from 'react-router-dom';
-import { Routes, Route} from "react-router-dom";
+import { Routes, Route, useNavigate} from "react-router-dom";
 import WorkExperiencePage from './WorkExperiencePage';
 import ProjectsPage from './ProjectsPage';
 import Header from './Header'
@@ -15,6 +15,8 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 function Home() {
+  let navigate =useNavigate();
+
   return (
       <div
         className="App"
@@ -22,8 +24,8 @@ function Home() {
           display: 'flex',
           flexDirection: 'column',
           height: '100vh',
-          boxSizing: 'border-box', //just added
-          paddingBottom: '25px' // just added
+          boxSizing: 'border-box',
+          paddingBottom: '25px'
         }}
       >
         <Header></Header>
@@ -33,7 +35,7 @@ function Home() {
             position: 'absolute',
             top: 0,
             left: 0,
-            zIndex: '-1', // Make sure the circle is behind other content
+            zIndex: '-1',
             overflow: 'visible',
             width: '100vw',
             height: '100vh'
@@ -48,7 +50,7 @@ function Home() {
             display: 'flex',
             justifyContent: 'space-between',
             margin: '25px',
-            flex: 1 // just added
+            flex: 1
           }}
         >
           <div
@@ -66,10 +68,10 @@ function Home() {
               I recently graduated from the University of Chicago, with a double major in Computer Science and Biology.
             </h4>
             <h4 style={{fontFamily: 'Courier', fontSize: 'clamp(17px, 1.7vw, 25px)', textAlign: 'left', marginTop: '3vh'}}>
-              I am currently working in the <b><a href="https://lab.plopes.org/" style={{textDecoration: 'none', color: "#75BDE0"}}> Human Computer Integration Lab </a> </b> under Pedro Lopes. I am working on a project involving electrical muscle stimulation (EMS) as an intervention mechanism for dermatillomania.
+              I am currently working in the <b><a href="https://lab.plopes.org/" style={{textDecoration: 'none', color: "#75BDE0"}}> Human Computer Integration Lab </a></b> under Pedro Lopes. I am working on a <b><button style={{all: 'unset', color: "#75BDE0", cursor: 'pointer'}} onClick={() => navigate('/projects')}>project</button></b> involving electrical muscle stimulation (EMS) as an intervention mechanism for dermatillomania.
             </h4>
             <h4 style={{fontFamily: 'Courier', fontSize: 'clamp(17px, 1.7vw, 25px)', textAlign: 'left', marginTop: '3vh'}}>
-              When I am not working, I enjoy spending time outdoors, cooking, and crocheting.
+              When I am not working, I <b><button style={{all: 'unset', color: "#75BDE0", cursor: 'pointer'}} onClick={() => navigate('/interests')}>enjoy</button></b> spending time outdoors, cooking, and crocheting.
             </h4>
           </div>
           <img src={'/headshot.png'} style={{borderRadius: '50%', width: '30vw', height: '30vw', marginRight: '30px'}}/>
@@ -81,24 +83,19 @@ function Home() {
             justifyContent: 'space-between',
             alignItems: 'flex-end',
             padding: '0px 25px',
-            // marginTop: 'auto', // just commented
           }}
         >
           <h6 style={{fontFamily: 'Courier', fontSize: 'clamp(12px, 1vw, 20px)'}}>
-            Website designed by Elena Hertel in ReactJS
+            Website designed and built by Elena Hertel using React.js
           </h6>
           <div>
             <div style={{display: 'flex', alignItems: 'center'}}>
-              <FontAwesomeIcon icon={faPhone} size="1.8x" style={{marginRight:'20px'}}/>
-              <h5 style={{fontFamily: 'Courier', fontSize: 'clamp(12px, 1.5vw, 20px)', textAlign: 'left', margin: 0, padding: '25px 0px'}}>
-                hertelelena@gmail.com
-              </h5>
+              <FontAwesomeIcon icon={faEnvelope} size="1.8x" style={{marginRight:'20px'}}/>
+              <img src={'/email.png'} style={{width: '18vw', margin: 0, padding: '25px 0px'}}/>
             </div>
             <div style={{display: 'flex', alignItems: 'center'}}>
-              <FontAwesomeIcon icon={faEnvelope} size="1.8x" style={{marginRight:'20px'}}/>
-              <h5 style={{fontFamily: 'Courier', fontSize: 'clamp(12px, 1.5vw, 20px)', textAlign: 'left', margin: 0}}>
-                (609) 721-0248
-              </h5>
+              <FontAwesomeIcon icon={faPhone} size="1.8x" style={{marginRight:'20px'}}/>
+              <img src={'/number.png'} style={{width: '11vw', margin:0}}/>
             </div>
           </div>
         </div>

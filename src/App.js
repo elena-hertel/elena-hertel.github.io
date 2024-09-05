@@ -29,18 +29,6 @@ function Home() {
       >
         <Header/>
 
-        {isMobile && (
-          <p style={{
-            textAlign: 'left',
-            fontFamily: 'Courier', 
-            fontSize: '15px', 
-            marginTop: '10px' 
-          }}>
-            For best experience, view on Desktop. <br />
-            Mobile version coming soon.
-          </p>
-        )}
-
         <svg
           viewBox="0 0 100 100"
           style={{
@@ -73,6 +61,18 @@ function Home() {
               maxWidth: '50vw'
             }}
           >
+            {isMobile && (
+              <p style={{
+                textAlign: 'left',
+                fontFamily: 'Courier', 
+                fontSize: '15px', 
+                marginTop: '10px' 
+              }}>
+                For best experience, view on Desktop. <br />
+                Mobile version coming soon.
+              </p>
+            )}
+            
             <h1 style={{ fontFamily: 'Courier', fontSize: '6vw', textAlign: 'left'}}>
               Hi, I'm Elena
             </h1>

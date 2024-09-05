@@ -30,17 +30,16 @@ function Home() {
         <Header/>
 
         {isMobile && (
-          <p style={{ 
-            textAlign: 'center', 
+          <p style={{
             fontFamily: 'Courier', 
-            fontSize: 'clamp(12px, 1.5vw, 20px)', 
-            color: '#FF0000',
+            fontSize: '1.5vw', 
             marginTop: '10px' 
           }}>
-            For best experience, view on Desktop. Mobile version coming soon.
+            For best experience, view on Desktop. <br />
+            Mobile version coming soon.
           </p>
         )}
-        
+
         <svg
           viewBox="0 0 100 100"
           style={{

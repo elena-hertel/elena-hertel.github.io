@@ -66,7 +66,7 @@ function InterestsPage () {
             color: "#F8BC9B"
         },
         {
-            text: "And this past summer I camped along a four day road trip from Chicago to Berkeley.",
+            text: "And this past summer, I camped along a four day road trip from Chicago to Berkeley.",
             image: "/camping.png",
             color: "#F89B9B"
         },

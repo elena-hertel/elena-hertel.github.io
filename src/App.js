@@ -31,8 +31,9 @@ function Home() {
 
         {isMobile && (
           <p style={{
+            textAlign: 'left',
             fontFamily: 'Courier', 
-            fontSize: '1.5vw', 
+            fontSize: '15px', 
             marginTop: '10px' 
           }}>
             For best experience, view on Desktop. <br />

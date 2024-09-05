@@ -89,11 +89,11 @@ function ProjectsPage() {
             <iframe src="https://www.youtube.com/embed/A-OjZe4ul9s?si=7MGUCpn0DzEFMcjm" title="Youtube video" allowfullscreen></iframe>
           </div>
           <Typography style={{margin: '15px 0px', fontFamily: 'Courier'}}>For more information about the GUI and schematics, please see the following presentation.</Typography>
-          <embed
+          <iframe
             src={'/RhythEMSPresentation.pdf'}
             type="application/pdf"
-            width={500}
-            height={350}
+            width="60%"
+            height="400px"
           />
         </Box>
         <Box

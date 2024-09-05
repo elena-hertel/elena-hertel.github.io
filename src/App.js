@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './index.css';
 import { Link } from 'react-router-dom';
@@ -10,9 +9,9 @@ import Header from './Header'
 import ResumePage from './ResumePage'
 import InterestsPage from './InterestsPage';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 function Home() {
   let navigate =useNavigate();
@@ -28,7 +27,20 @@ function Home() {
           paddingBottom: '25px'
         }}
       >
-        <Header></Header>
+        <Header/>
+
+        {isMobile && (
+          <p style={{ 
+            textAlign: 'center', 
+            fontFamily: 'Courier', 
+            fontSize: 'clamp(12px, 1.5vw, 20px)', 
+            color: '#FF0000',
+            marginTop: '10px' 
+          }}>
+            For best experience, view on Desktop. Mobile version coming soon.
+          </p>
+        )}
+        
         <svg
           viewBox="0 0 100 100"
           style={{

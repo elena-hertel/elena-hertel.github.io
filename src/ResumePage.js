@@ -6,7 +6,7 @@ function ResumePage () {
         <div style={{height: '100vh', display: 'flex', flexDirection: 'column'}}>
             <Header></Header>
             <div style={{flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <embed
+                <iframe
                     src={'/resume.pdf'}
                     type="application/pdf"
                     height="100%"

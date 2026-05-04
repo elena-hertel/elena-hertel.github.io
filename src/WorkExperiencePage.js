@@ -79,7 +79,7 @@ function WorkExperiencePage() {
                 <li>Designing and building an internal AI-driven support automation system using LangGraph and MCP tools, integrating with Jira to accelerate L1–L3 ticket resolution and reduce manual triage.</li>
                 <li>Owned improvements to a production RAG-based chatbot, increasing answer quality by ~20% through custom retrieval pipelines, prompt design, and automated evaluation, while balancing latency and reliability constraints.</li>
                 <li>Wrote and maintained custom data ingestion pipelines to keep AI systems synchronized with evolving product documentation, ensuring freshness, traceability, and consistent behavior in production.</li>
-                <li>Designed and implemented an internal AI-assisted performance review tool, working closely with People &amp; Culture and Legal teams to define compliant workflows and structured evaluation outputs.</li>
+                <li>Designed and implemented an internal AI-assisted performance review tool, working closely with People & Culture and Legal teams to define compliant workflows and structured evaluation outputs.</li>
                 <li>Built a reusable, JSON schema-driven form framework for chat-based AI interfaces, enabling structured user input and extending a previously chat-only platform for broader internal use.</li>
               </ul>
             </Box>

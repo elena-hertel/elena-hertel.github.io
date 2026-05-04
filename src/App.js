@@ -77,10 +77,10 @@ function Home() {
               Hi, I'm Elena
             </h1>
             <h4 style={{fontFamily: 'Courier', fontSize: 'clamp(17px, 1.7vw, 25px)', textAlign: 'left', marginTop: '10vh'}}>
-              I recently graduated from the University of Chicago, with a double major in Computer Science and Biology.
+              I graduated from the University of Chicago in 2024 with a double major in Computer Science and Biology.
             </h4>
             <h4 style={{fontFamily: 'Courier', fontSize: 'clamp(17px, 1.7vw, 25px)', textAlign: 'left', marginTop: '3vh'}}>
-              I am currently working in the <b><a href="https://lab.plopes.org/" style={{textDecoration: 'none', color: "#75BDE0"}}> Human Computer Integration Lab </a></b> under Pedro Lopes. I am working on a <b><button style={{all: 'unset', color: "#75BDE0", cursor: 'pointer'}} onClick={() => navigate('/projects')}>project</button></b> involving electrical muscle stimulation (EMS) as an intervention mechanism for dermatillomania.
+              I am currently working as a Software Engineer at Morningstar, where I build applied AI systems for financial advisors, including a RAG-based chatbot, an LLM-driven support automation tool, and internal tooling that connects AI interfaces to real product workflows.
             </h4>
             <h4 style={{fontFamily: 'Courier', fontSize: 'clamp(17px, 1.7vw, 25px)', textAlign: 'left', marginTop: '3vh'}}>
               When I am not working, I <b><button style={{all: 'unset', color: "#75BDE0", cursor: 'pointer'}} onClick={() => navigate('/interests')}>enjoy</button></b> spending time outdoors, cooking, and crocheting.
